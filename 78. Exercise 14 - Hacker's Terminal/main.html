@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hacking Simulator</title>
+    <style>
+        body {
+            background-color: #00FF00;
+            /* Bright green background */
+            color: #000;
+            /* Black text for contrast */
+            font-family: monospace;
+            font-size: 20px;
+            padding: 20px;
+        }
+
+        #terminal {
+            white-space: pre-wrap;
+        }
+
+        .blinking {
+            animation: blink 1s step-start infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="terminal"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
